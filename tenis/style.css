@@ -1,0 +1,636 @@
+/* header {
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+	background: #000000;
+	padding: 20px 0;
+	
+}
+
+.caixa {
+	position: relative;
+	width: 1500px;
+	margin: auto;
+}
+
+nav {
+	position: absolute;
+	top: 110px;
+	right: 0;
+}
+
+nav li {
+	display: inline-flex;
+	margin: flex;
+}
+
+nav a {
+	text-transform: arial;
+	width: 100px;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 26px;
+	text-decoration: none;
+} */
+a{
+	color: #000000;
+}
+::-webkit-scrollbar{
+	width: 10px;
+	background-color: #000000;
+}
+::-webkit-scrollbar-thumb{
+	width: 10px;
+	background-color:#4aedf3;
+}
+
+header{
+	background-color: #000000;
+	width: 100%;
+    display: flex;
+	justify-content: center;
+	font-weight: bold;
+    font-size: 26px;
+}
+.caixa{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+.produtos1{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+
+nav{
+	display: flex;
+	align-items: center;
+}
+
+nav ul{
+	display: flex;
+}
+nav ul li a{
+	text-transform: arial;
+	width: 100px;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 26px;
+	text-decoration: none;
+}
+nav a:hover {
+	color: #25b9f3;
+	text-decoration: underline;
+}
+/* Produtos */
+.produtos {
+	display: inline-block;
+	vertical-align: top;
+	width: 1300px;
+	margin: center;
+	padding: 20px 10px;
+	box-sizing: border-box;
+
+}
+
+.produtos li {
+	display: inline-block;
+	text-align: center;
+	width: 30%;
+	vertical-align: text-top;
+	padding: 20px 10px;
+	box-sizing: border-box;
+	border: 4px solid #000000;
+	border-radius: 10px;
+}
+
+.produtos li:hover {
+	border-color: #000000;
+}
+
+.produtos li:active {
+	border-color: #000000;	
+}
+
+.produtos li:hover h2 {
+	font-size: 34px;
+}
+
+.produtos h2 {
+	font-size: 40px;
+	font-weight: bold;
+}
+
+.produto-descricao {
+	font-size: 18px;
+}
+
+.produto-preco {
+	font-size: 22px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+ /* PG1 */
+ .card {
+  background-image: url('banner/banner8.png'); /* Substitua pelo caminho para sua imagem */
+  background-size: cover;                     /* Ajusta o tamanho da imagem para cobrir todo o card */
+  background-position: center;               /* Posiciona a imagem no centro do card */
+  
+  /* Outras propriedades de estilo para o card */
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  box-shadow: 0 2px 4px rgb(6, 255, 243);
+
+  display: inline-block;
+  vertical-align: top;
+  margin: center;
+  padding: 20px 10px;
+  box-sizing: border-box;
+}
+.PG1 {
+	display: flex;
+	vertical-align: top;
+	max-width: 100%;
+	height: auto;
+	margin: center;
+	padding: 20px 10px;
+	box-sizing: border-box;
+    justify-content: center;
+}
+
+.li{
+	background-color: #ffffff;  /* mudar a cor de dentro do card "Masculino/Feminino"*/
+}
+.li button{
+	color: #000000;
+
+
+}
+
+.PG1 li {
+	display: inline-block;
+	text-align: center;
+	width: 30%;
+	height: 30%;
+	vertical-align: text-top;
+	padding: 10px 10px;
+	box-sizing: content-box;
+	border: 4px solid #000000;
+	border-radius: 10px;
+}
+
+.PG1 li:hover {
+	border-color: #4aedf3;
+}
+
+.PG1 li:active {
+	border-color: #ffffff;	
+}
+.PG1 h1{
+	font-size: 40px;            /*aumentar/diminuir tamanho da fonte*/
+
+}
+.PG1 li h1{
+	color: #000000;         /* mudar cor da parte "conheça nossos produtos" na pagina de produto*/
+	font-size: 15px;         /* aumentar/diminuir tamanho escrita "conheça nosos produtos" página de produtos*/
+	padding-left: center;   /* localizar e alinhar a parte "conheça nossos produtos" página de produto*/
+	text-indent: 1em;     /* localizar e alinhar a parte "conheça nossos produtos" página de produto*/
+}
+.PG1 li:hover h2 {
+	font-size: 50px;      /* aumentar/diminuir tamanho escrita "Masculino e Feminino" página de produtos*/
+	
+}
+
+.PG1 h2 {
+	font-size: 50px;     /* aumentar/diminuir tamanho escrita "Masculino e Feminino" página de produtos*/
+	font-weight: bold;
+	color: #000000;   /* Cor da escrita "Masculino e Feminino" página de produtos*/
+}
+.PG1 a{
+	font-size: 20px;
+	color: #2e2e2eec;
+}
+
+/*Slider*/
+
+.slider {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	border-radius: 10px;
+    box-shadow: 0 2px 4px rgb(0, 0, 0);
+	text-align: center;
+  }
+  
+  .slider-container {
+	background-color: rgb(201, 195, 195);
+	background-size: cover;   
+	background-position: center;
+	width: 100%;
+	height: 1000px;
+	display: flex;
+	
+  }
+  
+  .slider-container img {
+	width: 33.333%;
+	height: 100%;
+	object-fit: relative;
+  }
+  .slider_texto p{
+	font-size: 16px;
+    width: 100%;
+	position: center;
+	margin: 2% auto;
+	display: flex;
+	justify-content: center;
+	color: #000000;
+	
+	
+  }
+  .slider_texto li{
+	color: #000000;
+	padding-left: 1em;
+	text-indent: 1em;
+  }
+  .slider_texto p1{
+	font-size: 35px;
+    width: 100%;
+	position: center;
+	margin: 5% auto;
+	display: flex;
+	justify-content: center;
+	color:#000000 ;
+
+
+  }
+
+/*parte de baixo do site*/
+
+footer {
+	color: #ffffff;
+	text-align: column;
+	background: url("logos e fundos/bg.jpg");
+	padding: 40px ;
+	margin-top: 20px;
+}
+footer .r{
+	margin-top: 20px;
+
+}
+
+.copyright {
+	color: #ffffff;
+	font-size: 20px;
+	margin: 30px;
+}
+
+main {
+	width: 940px;
+	margin: 0 auto;
+}
+ a{
+	display:inline-table;
+	color: #d7d9d6;
+	text-align: left;
+}
+ /* login */
+
+ #login-form {
+    border: 5px solid black;
+    padding: 20px;
+    width: 300px;
+    margin: 0 auto;
+	margin-top: 20px;
+  }
+
+  input[type="text"], input[type="password"] {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+  }
+
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+  #signup-links {
+    margin-top: 20px;
+    text-align: center;
+	align-items: center;
+  }
+
+  #signup-links a {
+    display: cover;
+    margin-right: 10px;
+    text-decoration: none;
+  }
+
+  #signup-links img {
+    height: 50px;
+    width: 50px;
+    margin-right: 20px;
+    vertical-align: middle;
+  }
+
+
+.login-form {
+	margin-top: 20px;
+	margin: 10px ;
+}
+
+form label, form legend {
+	display:block;
+	font-size: 20px;
+	margin: 10px;
+}
+
+.input-padrao {
+	display: flex;
+	margin: 0 0 20px;
+	padding: 10px 25px;
+	width: 50%;
+}
+
+.checkbox {
+	margin: 20px 0;
+}
+
+.enviar {
+	width:40%;
+	padding: 15px 0;
+	background: rgb(0, 0, 0);
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	border: none;
+	border-radius: 5px;
+	transition: 1s all;
+	cursor: pointer;
+}
+
+.enviar:hover {
+	background: rgb(0, 0, 0);
+	transform: scale(1.2);
+}
+
+table {
+	margin: 20px 0 40px;
+}
+
+thead {
+	background: #555555;
+	color: white;
+	font-weight: bold;
+	align-items: center;
+}
+body{
+	text-align: center;
+  
+}
+
+td, th {
+	border: 1px solid #000000;
+	padding: 8px 15px;
+}
+
+
+/* css da página home */
+
+.banner {
+	display: flex;
+    list-style:georgian;
+    width: 99%;
+    height: 100%;
+    gap: 600px;
+	background-color: blue;
+	position:relative;
+	margin:  auto;
+	justify-content: center;
+	background: url("banner/banner8.png");
+	border-radius: 10px;
+    box-shadow: 0 2px 4px rgb(6, 255, 243);
+  }
+  .banner p{
+	font-size: 20px;
+    width: 100%;
+	position: relative;
+	margin: 22px auto;
+	display: flex;
+	justify-content: center;
+  }
+.titulo-principal{
+	position: relative;
+	text-align: center;
+	font-size: 2em;
+	margin:  -1em;
+	clear: left;
+	display: flex;
+	justify-content: space-around;
+}
+.texto-centralizado{
+	text-align: center;
+	color: #000000;
+	font-size: 10px;
+}
+.titulo-principal h3{
+	font-size: 50px;
+}
+
+/*Quadrados das carcterísticas*/
+.caracteristicas{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.texto-centralizado1{
+	display: center;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-width: center;
+	color: #000000;
+	padding: 30px; 
+	border: 8px dotted rgb(0, 0, 0); 
+	width: 60%;
+	margin-bottom: 15px;
+}
+
+.texto-centralizado1 ul{
+	display: flex;
+	flex-direction: column;
+}
+
+.texto-centralizado1 ul li{
+	font-size: 30px;
+	list-style-type: disc;
+	
+}
+
+h4{
+    font-size: 45px;
+	
+}
+  
+  li {
+	color: #000000;
+	
+	padding-left: 1em;
+	text-indent: 1em;
+  }
+
+.principal p {
+	margin: 1em;
+}
+
+.principal strong {
+	font-weight: bold;
+}
+
+.principal em {
+	font-style: arial;
+}
+.mapa{
+	padding: 3em 0;
+}
+
+.mapa {
+	margin:2em;
+	text-align: center;
+}
+
+/*Parte do carrossel*/
+
+.carrossel{
+    width: 70px;
+    
+    margin: 20px;
+  
+}
+
+.carrossel ul{
+    display: flex;
+    list-style: none;
+    width: 100px;
+    height: 200px;
+    gap: 10px;
+    
+}
+.carrossel li{
+    position: relative;
+    animation: slide 12s infinite ease-in  ;
+}
+.carrossel img{
+    width: 250px;
+    height: 220px;
+}
+
+@keyframes slide{
+    0%{left: -20px;}
+    10%{left: -300px;}
+    30%{left: -400px;}
+    40%{left: -500px;}
+    50%{left: -600px;}
+    60% {left: -900px;}
+    100%{left: -0px;}
+   
+}
+         /**/
+
+		  
+
+.social{
+	display: flex;
+
+}
+.social a{
+	width: 200px;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	margin-right: 20px;
+}
+
+.social img{
+
+   width: 200px;
+}
+
+/* Botão */
+
+#buyButton {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+/* Botão de carrinho*/
+
+#cart {
+	background-color: #f2f2f2;
+	padding: 20px;
+	border-radius: 5px;
+	width: 300px;
+  }
+  
+  #itemList {
+	list-style-type: none;
+	padding: 0;
+  }
+  
+  .item {
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+  }
+  
+  .item-quantity {
+	margin-right: 10px;
+  }
+  
+  .item-button {
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 5px 10px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 14px;
+	cursor: pointer;
+	margin-right: 10px;
+  }
+  
+  #buyButton {
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 5px 10px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 14px;
+	cursor: pointer;
+  }
+
+  
+
