@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+    background: rgb(61, 68, 65);
+}
+
+.sobre{
+    position: absolute;
+    width:500px;
+    height:600px;
+    background-image: url(sobre/EU\ De\ beca.jpg);
+    background-size:cover;
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    border-radius: 3px;
+    font: bold 2em 'Century Gothic';
+}
+.sobre::before, .sobre::after {
+    content: '';
+    position:absolute;
+    z-index: -1;
+    width: calc(100% + 30px);
+    height:calc(100% + 30px);
+    background: linear-gradient(45deg, #000000, #000000, #ffffff, #ffffff, #000000, #000000,
+    #ffffff, #ffffff, #000000, #000000, #ffffff, #ffffff);
+    background-size: 300%;
+    border-radius: 8px;
+    animation: AnimarBorda 8s linear alternate infinite;
+
+}
+
+
+@keyframes AnimarBorda{
+
+0%{
+    background-position: 0;
+}
+100%{
+    background-position:300%;
+}
+
+}
+
+
+.sobre::after{
+    filter: blur(50px);
+}
