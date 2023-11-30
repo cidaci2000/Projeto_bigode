@@ -14,6 +14,7 @@
 								<li><a href="produtos 2.php">Produtos</a></li>
 								<li><a href="contato.php">Contato</a></li>
 								<li><a href="formulario.php">Login</a></li>
+                <li><a href="carrinho.php"><img class="car" src="redes sociais/car.jpg" alt=""></a></li>
 							</ul>
 						</nav>
 					</div>
@@ -44,6 +45,9 @@ footer {
 footer .r{
 	margin-top: 20px;
 
+}
+.car{
+  width: 70%;
 }
 
 .copyright {
